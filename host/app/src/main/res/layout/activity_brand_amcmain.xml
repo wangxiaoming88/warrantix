@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/amcBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:text="AMC"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:dividerHeight="@dimen/control_space_margin_small"
+        android:divider="@color/wx_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.6"
+            android:background="@color/wx_secondary_color"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/vd_sc_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            android:background="@color/wx_primary_color"
+            android:layout_weight="12">
+
+            <LinearLayout
+                android:id="@+id/products_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wx_primary_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/products_all"
+                        android:text="All"
+                        android:textSize="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:textColor="@color/wx_accent_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_26sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/stroke_accent_button_selector">
+                    </Button>
+                    <ImageView
+                        android:layout_margin="@dimen/_8sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/product_all"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/products_appliances"
+                        android:text=" Appliances "
+                        android:textSize="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:textColor="@color/wx_fourth_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_26sdp"
+                        android:background="@drawable/stroke_grey_button_selector">
+                    </Button>
+                    <ImageView
+                        android:layout_margin="@dimen/_8sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/product_appliances"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/wallet_vehicles"
+                        android:text=" Vehicles "
+                        android:textSize="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:textColor="@color/wx_fourth_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_26sdp"
+                        android:background="@drawable/stroke_grey_button_selector">
+                    </Button>
+                    <ImageView
+                        android:layout_margin="@dimen/_8sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/product_vehicles"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/products_electronics"
+                        android:text=" Electronics "
+                        android:textSize="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:textColor="@color/wx_fourth_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_26sdp"
+                        android:background="@drawable/stroke_grey_button_selector">
+                    </Button>
+                    <ImageView
+                        android:layout_margin="@dimen/_8sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/product_electronics"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/products_assorted"
+                        android:text=" Personal "
+                        android:textSize="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:textColor="@color/wx_fourth_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_26sdp"
+                        android:background="@drawable/stroke_grey_button_selector">
+                    </Button>
+                    <ImageView
+                        android:layout_margin="@dimen/_8sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/product_personal"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

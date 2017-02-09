@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/settings_aboutBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="@string/SHOPPING_CART"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_below="@id/settings_aboutBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/wx_secondary_color"
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        />
+
+</RelativeLayout>

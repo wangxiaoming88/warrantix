@@ -1,0 +1,23 @@
+{
+  "id": "com.plugin.testplugin.20160317.1",
+  "files": [
+    {
+      "id": "com.plugin.testplugin.20160317.1",
+      "md5": "69d3d81fa8cc5f05f1daab16dae89f4c",
+      "url": "http://192.168.3.206/plugins/com.plugin.testplugin.20160317.1.apk"
+    }
+  ],
+  "fragments": [
+    {
+      "host": "helloworld",
+      "name": "com.plugin.testplugin.HelloFragment",
+      "code": "com.plugin.testplugin.20160317.1"
+    },
+    {
+      "host": "pickname",
+      "name": "com.plugin.testplugin.PickerFragment",
+      "code": "com.plugin.testplugin.20160317.1"
+    }
+  ],
+  "version": "20160317.1"
+}

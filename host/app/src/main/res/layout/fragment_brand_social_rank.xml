@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<ScrollView-->
+            <!--android:layout_below="@id/useraccountbar"-->
+            <!--android:background="@color/wx_secondary_color"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:fillViewport="true"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/layout_youtube"-->
+                    <!--android:layout_marginTop="@dimen/_10sdp"-->
+                    <!--android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--android:background="@color/wx_secondary_color"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical">-->
+
+
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:orientation="vertical"-->
+                            <!--android:background="@color/wx_secondary_color"-->
+                            <!--android:layout_height="@dimen/_40sdp">-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/revealTXT"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="@string/Rank"-->
+                                <!--android:layout_gravity="bottom"-->
+                                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                                <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                                <!--android:textColor="@color/wx_tag_color"-->
+                                <!--android:textSize="@dimen/_13sdp" />-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/revealTXT1"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="@string/rank_explain"-->
+                                <!--android:layout_gravity="bottom"-->
+                                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                                <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                                <!--android:textColor="@color/wx_list_text_color"-->
+                                <!--android:textSize="@dimen/_11sdp" />-->
+                        <!--</LinearLayout>-->
+
+
+
+
+                        <!--<ListView-->
+                            <!--android:id="@+id/list"-->
+                            <!--android:layout_marginTop="@dimen/_1sdp"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:dividerHeight="@dimen/_10sdp"-->
+                            <!--android:background="@android:color/white"-->
+                            <!--android:divider="@color/wx_secondary_color"-->
+                            <!--android:layout_height="wrap_content" >-->
+
+                        <!--</ListView>-->
+
+                    <!--</LinearLayout>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</ScrollView>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/control_space_margin_tiny"
+        android:layout_marginBottom="@dimen/control_space_margin_tiny"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/wx_secondary_color"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/revealTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rank"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/wx_tag_color"
+            android:textSize="@dimen/_13sdp" />
+        <TextView
+            android:id="@+id/revealTXT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rank_explain"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/wx_list_text_color"
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+    <ListView
+        android:layout_below="@id/topLayout"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:dividerHeight="@dimen/control_space_margin_small"
+        android:divider="@color/wx_secondary_color"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:layout_height="match_parent" >
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:id="@+id/framelayout"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/fabButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/social_create"
+            android:contentDescription="@null"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

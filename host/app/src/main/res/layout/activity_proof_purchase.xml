@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/registration_navigation_bar" android:id="@+id/registration_navigation_bar" />
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registration_navigation_bar"
+        android:id="@+id/cardViewInProofPurchase">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/headerInProofPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progressImageViewInProofPurchase"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/control_space_margin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/circle1"
+                        android:background="@drawable/transfer_circle_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp" />
+
+                    <ImageButton
+                        android:id="@+id/bar1"
+                        android:background="@drawable/transfer_retangle_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_3sdp" />
+
+                    <ImageButton
+                        android:id="@+id/circle2"
+                        android:background="@drawable/transfer_circle_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp" />
+                    <ImageButton
+                        android:id="@+id/bar2"
+                        android:background="@drawable/transfer_retangle_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_3sdp" />
+                    <ImageButton
+                        android:id="@+id/circle3"
+                        android:background="@drawable/transfer_circle_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp" />
+                    <ImageButton
+                        android:id="@+id/bar3"
+                        android:background="@drawable/transfer_retangle"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_3sdp" />
+                    <ImageButton
+                        android:id="@+id/circle4"
+                        android:background="@drawable/transfer_circle_white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp" />
+                </LinearLayout>
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/control_space_margin_medium"
+                    android:src="@drawable/registration_stepper_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/titleViewInProofPurchase"
+                    style="@style/TitleViewStyle"
+                    android:layout_marginTop="@dimen/control_space_margin_small"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/progressImageViewInProofPurchase"
+                    android:text="PROOF OF PURCHASE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_below="@id/titleViewInProofPurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/control_space_margin_medium"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_below="@id/cardViewInProofPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardView1InProofPurchase">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/invoiceImageViewInProofPurchase"
+                android:layout_above="@+id/btnTakePhotoInProofPurchase"
+                android:src="@drawable/registration_invoice_bill"
+                android:scaleType="center"
+                android:layout_marginBottom="@dimen/control_space_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_weight="6"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+                    <Button
+                        android:id="@+id/btnTakePhotoInProofPurchase"
+                        style="@style/DefaultButton"
+                        android:layout_centerInParent="true"
+                        android:text="TAKE PHOTO OF INVOICE"
+                        android:textColor="@drawable/accent_button_textcolor"
+                        android:layout_width="@dimen/_180sdp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+                    <Button
+                        android:id="@+id/btnChooseGalleryInProofPurchase"
+                        style="@style/DefaultButton"
+                        android:layout_centerHorizontal="true"
+                        android:text="CHOOSE FROM GALLERY"
+                        android:layout_centerInParent="true"
+                        android:textColor="@drawable/accent_button_textcolor"
+                        android:layout_marginTop="@dimen/control_space_margin_small"
+                        android:layout_width="@dimen/_180sdp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+                    <Button
+                        android:id="@+id/btnSkipInProofPurchase"
+                        style="@style/DefaultButton"
+                        android:layout_centerInParent="true"
+                        android:text="SKIP"
+                        android:textColor="@drawable/accent_button_textcolor"
+                        android:layout_marginTop="@dimen/control_space_margin_small"
+                        android:layout_width="@dimen/_180sdp" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/spaceViewInProofPurchase"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/control_space_margin_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <View
+        android:layout_below="@+id/cardView1InProofPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_space_margin_medium"/>
+</RelativeLayout>

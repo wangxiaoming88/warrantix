@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_plugin_accessories"
+        android:title="Accessories" />
+
+    <item
+        android:id="@+id/menu_plugin_amc"
+        android:title="AMC" />
+
+    <item
+        android:id="@+id/menu_plugin_usedproducts"
+        android:title="Used Products" />
+
+    <item
+        android:id="@+id/menu_plugin_insurance"
+        android:title="Insurance" />
+</menu>

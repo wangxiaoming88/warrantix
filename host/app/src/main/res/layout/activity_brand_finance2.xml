@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/useraccountbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="@string/PRODUCT_FINANCE"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/useraccountbar"
+        android:background="@color/wx_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/control_space_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewInProofPurchase">
+                <RelativeLayout
+                    android:background="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp">
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/registration_stepper_two"
+                                android:layout_width="@dimen/_119sdp"
+                                android:layout_height="@dimen/_16sdp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_below="@id/cardViewInProofPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView1InProofPurchase">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Heading3"
+                                android:textColor="@color/wx_title_color"
+                                android:text="Employer"
+                                android:layout_marginTop="@dimen/control_space_margin_large"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/employerEditText"
+                                style="@style/RegularEdit"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:hint="Select Employer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/mode_salaried"
+                                android:button="@drawable/custom_radio_button"
+                                android:background="@null"
+                                android:paddingLeft="@dimen/control_space_margin_small"
+                                android:textSize="@dimen/small_font_height"
+                                android:textColor="@color/wx_list_text_color"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_width="match_parent"
+                                android:text="Salaried"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:layout_marginBottom="@dimen/control_space_margin_medium"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+
+
+                            <RadioButton
+                                android:id="@+id/mode_selfemployed"
+                                android:button="@drawable/custom_radio_button"
+                                android:background="@null"
+                                android:paddingLeft="@dimen/control_space_margin_small"
+                                android:textSize="@dimen/small_font_height"
+                                android:textColor="@color/wx_list_text_color"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:text="Self Employed"
+                                android:layout_marginBottom="@dimen/control_space_margin_medium"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Heading3"
+                                android:textColor="@color/wx_title_color"
+                                android:text="Cross Monthly Salary"
+                                android:layout_marginTop="@dimen/control_space_margin_small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.warrantix.main.customview.CurrencyTextView
+                                android:id="@+id/monthlySalaryTxt"
+                                style="@style/RegularEdit"
+                                android:inputType="numberDecimal"
+                                android:digits="0123456789.,"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:hint="Enter Monthly Salary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Heading3"
+                                android:textColor="@color/wx_title_color"
+                                android:text="Salary deposited to which bank?"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="@dimen/_35sdp">
+                                <com.warrantix.main.customview.TokenTextView
+                                    android:focusable="false"
+                                    android:id="@+id/bankProductTXT"
+                                    style="@style/RegularTokenView"
+                                    android:layout_width="match_parent"
+                                    android:hint="Select Bank"
+                                    android:textColorHint="@color/wx_hint_color"
+                                    android:shadowColor="@color/wx_hint_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/wx_tag_color"
+                                    android:layout_height="match_parent" />
+                                <ImageButton
+                                    android:id="@+id/dropbutton1"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/check"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_alignRight="@+id/bankProductTXT"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <ListView
+                            android:visibility="gone"
+                            android:id="@+id/bankListview"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/control_space_margin_small"
+                            android:layout_marginRight="@dimen/control_space_margin_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"/>
+
+                        <TextView
+                            style="@style/Heading3"
+                            android:textColor="@color/wx_title_color"
+                            android:text="Joining date"
+                            android:layout_marginTop="@dimen/control_space_margin_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/joiningDateTxt"
+                            style="@style/RegularEdit"
+                            android:drawableLeft="@drawable/calculator"
+                            android:textColorHint="@color/wx_hint_color"
+                            android:paddingRight="@dimen/control_space_margin_large"
+                            android:hint="dd/mm/yyyy"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Heading3"
+                                android:textColor="@color/wx_title_color"
+                                android:text="Work Experience"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/workExperienceTXT"
+                                style="@style/RegularEdit"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:hint="Enter Experience in Years"
+                                android:inputType="number|none"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Heading3"
+                                android:textColor="@color/wx_title_color"
+                                android:text="Years In Current City"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/yearsInCityTxt"
+                                style="@style/RegularEdit"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:hint="Enter Duration in Years"
+                                android:inputType="number|none"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Heading3"
+                                android:textColor="@color/wx_title_color"
+                                android:text="Years In Current Home"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/durationInYearsTxt"
+                                style="@style/RegularEdit"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:hint="Enter Duration in Years"
+                                android:inputType="number|none"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/control_space_margin_small"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal"
+                            android:layout_height="@dimen/_70sdp">
+
+                            <Button
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/nextBTN"
+                                style="@style/DefaultButton"
+                                android:textColor="@drawable/accent_button_textcolor"
+                                android:text=" NEXT"
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_30sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

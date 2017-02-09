@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/lblTitleInBrandFragment"
+                style="@style/TagViewStyle"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:text="LEAD BRAND"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:layout_width="wrap_content"/>
+            <ImageView
+                android:id="@+id/brandLogoInBrandFragment"
+                android:layout_below="@id/lblTitleInBrandFragment"
+                android:src="@drawable/walletbrand_hero_full"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_marginTop="@dimen/control_space_margin_tiny"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_height="0dp" />
+            <ImageView
+                android:id="@+id/advertiseVideoInBrandFragment"
+                android:layout_below="@id/brandLogoInBrandFragment"
+                android:src="@drawable/walletbrand_video_full"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_weight="6"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/lblAssociatedBrandInBrandFragment"
+                android:layout_below="@id/advertiseVideoInBrandFragment"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                style="@style/TagViewStyle"
+                android:text="ASSOCIATE BRANDS"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_weight="6.6"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/videocon_layout"
+                            android:layout_width="@dimen/_100sdp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_63sdp"
+                                android:layout_height="@dimen/_37sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="18dp"
+                                android:background="@drawable/brand_videocon"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_69sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="18dp"
+                                android:background="@drawable/brand_samsung" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+
+                        <!--app:siShape="@drawable/triangle"-->
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="@dimen/_69sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="18dp"
+                                android:background="@drawable/brand_lg"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/brands_layout1"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_height="0dp">
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="@dimen/_25sdp"-->
+                        <!--android:background="@android:color/white"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--</LinearLayout>-->
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/suzukiBTN"
+                                android:layout_width="@dimen/_49sdp"
+                                android:layout_height="@dimen/_34sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="18dp"
+                                android:background="@drawable/brand_suzuki"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:gravity="center_horizontal"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/tataBTN"
+                                android:layout_width="@dimen/_51sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="18dp"
+                                android:background="@drawable/brand_tata"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:gravity="center_horizontal"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/cromaxBTN"
+                                android:layout_width="@dimen/_73sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="18dp"
+                                android:background="@drawable/brand_cromax"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/brands_layout2"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.15"
+                        android:background="@color/wx_secondary_color"
+                        android:layout_height="0dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@color/wx_secondary_color"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>

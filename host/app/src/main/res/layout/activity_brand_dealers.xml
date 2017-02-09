@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="@string/Dealers_big"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/brand_hero"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hero">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/vd_sc"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/wx_third_color"
+                android:layout_height="@dimen/_35sdp">
+                <TextView
+                    android:id="@+id/explain"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/showingdealers"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/dealersplace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:text="@string/Ambawadi"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/dealerschange"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Change"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_marginTop="@dimen/control_space_margin_small"
+                    android:layout_marginLeft="@dimen/control_space_margin_small"
+                    android:layout_marginRight="@dimen/control_space_margin_small"
+                    android:layout_width="match_parent"
+                    android:dividerHeight="@dimen/control_space_margin_small"
+                    android:divider="@color/wx_secondary_color"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

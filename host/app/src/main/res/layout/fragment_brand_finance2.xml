@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/vd_sc"
+        android:background="@color/wx_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginRight="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wx_secondary_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:background="@android:color/white"
+                android:layout_height="@dimen/_40sdp">
+
+                <TextView
+                    android:id="@+id/amountTXT"
+                    android:layout_width="0dp"
+                    android:text="AMOUNT"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="@dimen/_20sdp" />
+                <TextView
+                    android:id="@+id/amountValueTXT"
+                    android:layout_width="0dp"
+                    android:text="Rs. 5,000"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/salientfeatured"
+                android:layout_width="match_parent"
+                android:text="SELECT PAYMENT MODE"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="@dimen/_25sdp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/mode_creditcard"
+                    android:button="@drawable/custom_radio_button"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/control_space_margin_small"
+                    android:textSize="@dimen/small_font_height"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:text="Credit Card"
+                    android:layout_marginTop="@dimen/control_space_margin_medium"
+                    android:layout_marginBottom="@dimen/control_space_margin_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+
+                <RadioButton
+                    android:id="@+id/mode_debitcard"
+                    android:button="@drawable/custom_radio_button"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/control_space_margin_small"
+                    android:textSize="@dimen/small_font_height"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Debit Card"
+                    android:layout_marginBottom="@dimen/control_space_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+
+                <RadioButton
+                    android:id="@+id/mode_netbanking"
+                    android:button="@drawable/custom_radio_button"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/control_space_margin_small"
+                    android:textSize="@dimen/small_font_height"
+                    android:textColor="@color/wx_list_text_color"
+                    android:text="NetBanking"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/control_space_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/mode_americancard"
+                    android:button="@drawable/custom_radio_button"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/control_space_margin_small"
+                    android:textSize="@dimen/small_font_height"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/control_space_margin_medium"
+                    android:layout_gravity="center_vertical"
+                    android:text="American Express Card"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/mode_mobiquikwallet"
+                    android:button="@drawable/custom_radio_button"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/control_space_margin_small"
+                    android:textSize="@dimen/small_font_height"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Mobiquik Wallet"
+                    android:layout_marginBottom="@dimen/control_space_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+
+                <RadioButton
+                    android:id="@+id/mode_paytmwallet"
+                    android:button="@drawable/custom_radio_button"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/control_space_margin_small"
+                    android:textSize="@dimen/small_font_height"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="payTM Wallet"
+                    android:layout_marginBottom="@dimen/control_space_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/entercarddetails"
+                android:layout_width="match_parent"
+                android:text="ENTER CARD DETAILS"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="@dimen/_25sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/control_space_margin_small"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/Heading3"
+                    android:textColor="@color/wx_title_color"
+                    android:text="Card Number"
+                    android:layout_marginTop="@dimen/control_space_margin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/cardnumberTXT"
+                    style="@style/RegularEdit"
+                    android:layout_width="match_parent"
+                    android:hint="Enter Card Number"
+                    android:inputType="number|none"
+                    android:digits="0123456789"
+                    android:textSize="@dimen/tiny_font_height"
+                    android:shadowColor="@color/wx_tag_color"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/Heading3"
+                    android:textColor="@color/wx_title_color"
+                    android:text="Name"
+                    android:layout_marginTop="@dimen/control_space_margin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/numberoncardTXT"
+                    style="@style/RegularEdit"
+                    android:layout_width="match_parent"
+                    android:hint="Enter name on card"
+                    android:textSize="@dimen/tiny_font_height"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/Heading3"
+                            android:textColor="@color/wx_title_color"
+                            android:text="Expiry"
+                            android:layout_marginTop="@dimen/control_space_margin_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/empiryTXT"
+                            style="@style/RegularEdit"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/tiny_font_height"
+                            android:hint="Expiry (MM/YY)"
+                            android:inputType="number|none"
+                            android:maxLength="10"
+                            android:digits="0123456789"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/Heading3"
+                            android:textColor="@color/wx_title_color"
+                            android:text="CVV"
+                            android:layout_marginTop="@dimen/control_space_margin_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:id="@+id/CVVTXT"
+                                android:layout_width="match_parent"
+                                style="@style/RegularEdit"
+                                android:hint="CVV"
+                                android:inputType="number|none"
+                                android:maxLength="8"
+                                android:digits="0123456789"
+                                android:textSize="@dimen/tiny_font_height"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                            <ImageButton
+                                android:id="@+id/cvvInfoBTN"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/control_space_margin_medium"
+                                android:background="@drawable/default_layout_selector"
+                                android:src="@drawable/info"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_14sdp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/nextBTN"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    style="@style/DefaultButtonRed"
+                    android:textColor="@drawable/accent_button_textcolor_red"
+                    android:text=" NEXT"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_30sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_14sdp">
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

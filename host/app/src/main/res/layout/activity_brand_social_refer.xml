@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/referBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="@string/Refer_big"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/brand_hero"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:src="@drawable/hero">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.warrantix.main.customview.VerticalScrollView
+        android:layout_marginBottom="@dimen/control_space_margin_medium"
+        android:layout_below="@id/referBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/control_space_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/salientfeatured"
+                android:layout_width="match_parent"
+                android:text="@string/Refer_big_explain"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:textSize="@dimen/tiny_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="@dimen/_25sdp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salientfeatured"
+                android:id="@+id/cardViewInProofPurchase">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_height="@dimen/_35sdp">
+                            <com.warrantix.main.customview.TokenTextView
+                                android:focusable="false"
+                                android:id="@+id/referviaTXT"
+                                style="@style/RegularTokenView"
+                                android:layout_width="match_parent"
+                                android:hint="@string/Refer_via"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:shadowColor="@color/wx_hint_color"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_height="match_parent" />
+                            <ImageButton
+                                android:id="@+id/dropbutton1"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/check"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_alignRight="@+id/referviaTXT"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp" />
+
+                        </RelativeLayout>
+
+                        <ListView
+                            android:visibility="gone"
+                            android:id="@+id/productListView"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/control_space_margin_small"
+                            android:layout_marginRight="@dimen/control_space_margin_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_height="@dimen/_35sdp">
+                            <com.warrantix.main.customview.RecipientTextView
+                                android:focusable="false"
+                                android:id="@+id/addrecipientsTXT"
+                                style="@style/RegularTokenView"
+                                android:layout_width="match_parent"
+                                android:hint="@string/add_more_recipicients"
+                                android:textColorHint="@color/wx_hint_color"
+                                android:shadowColor="@color/wx_hint_color"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_height="match_parent" />
+                            <ImageButton
+                                android:id="@+id/dropbutton2"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/plus"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_alignRight="@+id/addrecipientsTXT"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp" />
+                        </RelativeLayout>
+                        <ListView
+                            android:visibility="gone"
+                            android:id="@+id/profileListView"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/control_space_margin_small"
+                            android:layout_marginRight="@dimen/control_space_margin_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"/>
+                        <EditText
+                            android:id="@+id/messageTXT"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:layout_width="match_parent"
+                            android:hint="@string/message"
+                            android:textColorHint="@color/wx_hint_color"
+                            android:shadowColor="@color/wx_hint_color"
+                            android:textSize="@dimen/_12sdp"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:lines="5"
+                            android:gravity="top"
+                            android:background="@null"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_height="@dimen/_90sdp" />
+                        <View
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@color/wx_tag_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/control_space_margin_large">
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtErrorMessage"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textColor="@color/wx_enthusiastic_color"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal"
+                            android:layout_height="@dimen/_50sdp">
+
+                            <Button
+                                android:layout_gravity="top"
+                                android:id="@+id/doneBTN"
+                                style="@style/DefaultButtonRed"
+                                android:textColor="@drawable/accent_button_textcolor_red"
+                                android:text=" DONE"
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_30sdp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </com.warrantix.main.customview.VerticalScrollView>
+
+
+
+
+
+
+</RelativeLayout>

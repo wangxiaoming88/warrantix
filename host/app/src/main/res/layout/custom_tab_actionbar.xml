@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/actionbar_wallet_item"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/actionbar_wallet_imageview"
+            style="@style/DefaultTabButton"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@drawable/maintab_wallet"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/actionbar_marketplace_item"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/actionbar_marketplace_imageview"
+            style="@style/DefaultTabButton"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@drawable/maintab_marketplace" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/actionbar_registration_item"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/actionbar_registration_imageview"
+            style="@style/DefaultTabButton"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@drawable/maintab_registration" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/actionbar_social_item"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/actionbar_social_imageview"
+            style="@style/DefaultTabButton"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/maintab_social" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/actionbar_more_item"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/actionbar_more_imageview"
+            style="@style/DefaultTabButton"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/maintab_more" />
+    </RelativeLayout>
+</LinearLayout>

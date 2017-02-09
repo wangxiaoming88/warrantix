@@ -1,0 +1,160 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="colorControlNormal">@color/wx_list_text_color</item>
+        <item name="colorControlActivated">@color/wx_list_text_color</item>
+        <item name="colorControlHighlight">@color/wx_list_text_color</item>
+    </style>
+
+    <color name="wx_primary_color">#FFFFFF</color>
+    <color name="wx_secondary_color">#F1F1F1</color>
+    <color name="wx_third_color">#E3E3E3</color>
+    <color name="wx_fourth_color">#999999</color>
+    <color name="wx_accent_color">#EF781A</color>
+    <color name="wx_enthusiastic_color">#f51f1d</color>
+    <color name="wx_text_color">#575757</color>
+    <color name="wx_tag_color">#4e4e4e</color>
+    <color name="wx_title_color">#575757</color>
+    <color name="wx_hint_color">#848484</color>
+    <color name="wx_list_text_color">#969696</color>
+    <color name="wx_orange_color">#ff8585</color>
+    <color name="blackcolor">#575757</color>
+    <color name="transparent_color">@android:color/transparent</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="wx_overlay_color">#AA000000</color>
+    <color name="wx_overlay_color1">#55000000</color>
+
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+
+    <style name="TitleViewStyle">
+        <item name="android:textSize">@dimen/normal_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:textColor">@color/wx_accent_color</item>
+    </style>
+    <style name="MessageViewStyle">
+        <item name="android:textSize">@dimen/normal_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:textColor">@color/wx_text_color</item>
+    </style>
+    <style name="TagViewStyle">
+        <item name="android:textSize">@dimen/small_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:textColor">@color/wx_tag_color</item>
+    </style>
+    <style name="Heading1">
+        <item name="android:textSize">@dimen/high_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:paddingLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingRight">@dimen/control_space_margin_medium</item>
+    </style>
+    <style name="Heading3">
+        <item name="android:textSize">@dimen/small_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingRight">@dimen/control_space_margin_medium</item>
+        <item name="android:textColor">@color/wx_title_color</item>
+    </style>
+    <style name="RegularEdit">
+        <item name="android:textSize">@dimen/small_font_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:layout_marginLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingRight">@dimen/control_space_margin_large</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/wx_title_color</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+    <style name="RegularTokenView">
+        <item name="android:textSize">@dimen/small_font_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:layout_marginLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingLeft">@dimen/control_space_margin_medium</item>
+        <item name="android:paddingRight">@dimen/_40sdp</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/wx_hint_color</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+    <style name="BoldEdit">
+        <item name="android:textSize">@dimen/normal_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Bold.otf</item>
+    </style>
+    <style name="RegularText">
+        <item name="android:textSize">@dimen/small_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+    <style name="ActionBarTitle">
+        <item name="android:textSize">@dimen/normal_font_height</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+    <style name="DefaultButton">
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:background">@drawable/stroke_round_accent_button_selector</item>
+        <item name="android:textSize">@dimen/default_button_textsize</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+    <style name="DefaultTabButton">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DefaultButtonPaint">
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:background">@drawable/stroke_round_accent_button_paint_selector</item>
+        <item name="android:textSize">@dimen/default_button_textsize</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+
+    <style name="DefaultButtonRed">
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:background">@drawable/stroke_round_accent_button_selector_red</item>
+        <item name="android:textSize">@dimen/default_button_textsize</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+
+    <style name="DefaultButtonRedCircle">
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:background">@drawable/circle_accent_button_selector</item>
+    </style>
+
+    <style name="DefaultBackButtonStyle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">@dimen/_34sdp</item>
+        <item name="android:layout_height">@dimen/actionbar_button_height</item>
+        <item name="android:src">@drawable/registration_back</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="DefaultButtonPaintRed">
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:background">@drawable/stroke_round_accent_button_paint_red_selector</item>
+        <item name="android:textSize">@dimen/default_button_textsize</item>
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+
+    <style name="ToolTipLayoutCustomStyle">
+        <item name="ttlm_strokeColor">@color/wx_primary_color</item>
+        <item name="ttlm_backgroundColor">@color/wx_accent_color</item>
+        <item name="ttlm_cornerRadius">@dimen/_5sdp</item>
+        <item name="android:color">@color/wx_primary_color</item>
+        <item name="ttlm_font">fonts/Montserrat-Regular.ttf</item>
+    </style>
+
+    <style name="ToolTipLayoutDefaultStyle.CustomFont" parent="ToolTipLayoutDefaultStyle">
+        <item name="ttlm_font">fonts/at.ttc</item>
+    </style>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edtTxt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Rs."
+    fontPath="fonts/Montserrat-Bold.otf"
+    android:textColor="@color/wx_tag_color"
+    android:textSize="@dimen/normal_font_height"
+    tools:ignore="MissingPrefix" />
+    <!--android:background="@drawable/token_item_selector"-->
+    <!--android:textColor="@color/wx_primary_color" />-->

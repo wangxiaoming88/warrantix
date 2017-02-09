@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/registration_navigation_bar" android:id="@+id/registration_navigation_bar" />
+    <ScrollView
+        android:layout_below="@id/registration_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/control_space_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewInRegistrationHelp"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lblQuickStartInRegistrationHelp"
+                        style="@style/BoldEdit"
+                        android:textColor="@color/wx_accent_color"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_centerHorizontal="true"
+                        android:text="QUICK REGISTRATION"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:id="@+id/btnCloseInRegistrationHelp"
+                        android:src="@drawable/registration_close_grey"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/lblQuickStartInRegistrationHelp"
+                        android:layout_alignRight="@+id/lblDescriptionInRegistrationHelp"
+                        android:layout_alignEnd="@+id/lblDescriptionInRegistrationHelp" />
+                    <TextView
+                        android:id="@+id/lblDescriptionInRegistrationHelp"
+                        style="@style/RegularText"
+                        android:lines="2"
+                        android:gravity="center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/control_space_margin_tiny"
+                        android:layout_below="@id/btnCloseInRegistrationHelp"
+                        android:layout_marginRight="@dimen/layout_space_margin_medium"
+                        android:text="Scan Your Product Code to Auto-Discover Your Product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:id="@+id/lblDescription1InRegistrationHelp"
+                        android:layout_below="@id/lblDescriptionInRegistrationHelp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/control_space_margin_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="@dimen/control_space_margin_small"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/RegularText"
+                                android:text="Serial Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                style="@style/RegularText"
+                                android:text="(Serial, S/N, IMEI)"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/control_space_margin_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/RegularText"
+                                android:text="Bar Code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                style="@style/RegularText"
+                                android:text="(EAN, UPC, EN, PN)"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageViewInRegistrationHelp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/lblDescription1InRegistrationHelp"
+                        android:src="@drawable/registration_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/btnProceedToScanInHelp"
+                        style="@style/DefaultButton"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_centerHorizontal="true"
+                        android:text="PROCEED TO SCANNER MODE"
+                        android:textColor="@drawable/accent_button_textcolor"
+                        android:layout_below="@id/imageViewInRegistrationHelp"
+                        android:layout_width="wrap_content"/>
+                    <Button
+                        android:id="@+id/btnManualModeInHelp"
+                        style="@style/DefaultButton"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/control_space_margin_small"
+                        android:layout_alignLeft="@+id/btnProceedToScanInHelp"
+                        android:layout_alignRight="@+id/btnProceedToScanInHelp"
+                        android:text="ENTER DETAILS MANUALLY"
+                        android:textColor="@drawable/accent_button_textcolor"
+                        android:layout_below="@id/btnProceedToScanInHelp"
+                        android:layout_width="wrap_content"/>
+                    <View
+                        android:layout_below="@+id/btnManualModeInHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/control_space_margin_medium"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_below="@+id/cardViewInRegistrationHelp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_space_margin_medium"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

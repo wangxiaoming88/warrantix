@@ -1,0 +1,5 @@
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The drawables used here can be solid colors, gradients, shapes, images, etc. -->
+    <item android:drawable="@color/wx_primary_color" />
+    <item android:drawable="@drawable/splash" />
+</transition>

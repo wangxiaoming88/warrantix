@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/settings_aboutBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="@string/ABOUT"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_below="@id/settings_aboutBar"
+        android:layout_above="@+id/cardViewInProofPurchase2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardView1InProofPurchase">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/wx_primary_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+                <TextView
+                    android:id="@+id/welcome_warrantixTxt"
+                    android:layout_width="wrap_content"
+                    android:text="WELCOME TO WARRANTIX!"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_marginBottom="@dimen/control_space_margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cardViewInProofPurchase2">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="@dimen/_45sdp">
+
+                <Button
+                    android:layout_marginRight="@dimen/control_space_margin_medium"
+                    android:id="@+id/prev"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:text="PREV"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/circle1"
+                    android:background="@drawable/transfer_circle_color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+
+                <ImageButton
+                    android:id="@+id/bar1"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+
+                <ImageButton
+                    android:id="@+id/circle2"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <ImageButton
+                    android:id="@+id/bar2"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+                <ImageButton
+                    android:id="@+id/circle3"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <ImageButton
+                    android:id="@+id/bar3"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+                <ImageButton
+                    android:id="@+id/circle4"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <ImageButton
+                    android:id="@+id/bar4"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+                <ImageButton
+                    android:id="@+id/circle5"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <Button
+                    android:layout_marginLeft="@dimen/control_space_margin_medium"
+                    android:id="@+id/next"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:text="NEXT"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/wx_accent_color"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

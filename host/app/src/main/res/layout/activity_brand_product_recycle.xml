@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/product_rebate_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:text="@string/Recycle_Product"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/product_rebate_bar"
+        android:background="@color/wx_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewInProofPurchase">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/note"
+                            android:layout_marginTop="@dimen/control_space_margin_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/control_space_margin_medium"
+                            android:text="@string/Note"
+                            android:textSize="@dimen/normal_font_height"
+                            android:textColor="@color/wx_enthusiastic_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/featured_description"
+                            android:layout_width="match_parent"
+                            android:layout_weight="3"
+                            android:maxLines="5"
+                            android:singleLine="false"
+                            android:text="@string/Recycle_Explain"
+                            android:layout_marginTop="@dimen/control_space_margin_small"
+                            android:layout_marginLeft="@dimen/control_space_margin_medium"
+                            android:layout_marginRight="@dimen/control_space_margin_medium"
+                            android:layout_marginBottom="@dimen/control_space_margin_small"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/wx_title_color"
+                            android:textSize="@dimen/tiny_font_height"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="SELECT YOUR OPTION"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_marginLeft="@dimen/control_space_margin_medium"
+                        android:text="Recycle"
+                        android:textColor="@color/wx_title_color"
+                        android:textSize="@dimen/small_font_height"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@drawable/custom_radio_button"
+                        android:paddingLeft="@dimen/control_space_margin_small"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40sdp" />
+
+                    <RadioButton
+                        android:layout_marginLeft="@dimen/control_space_margin_medium"
+                        android:text="Refurbish"
+                        android:textSize="@dimen/small_font_height"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@drawable/custom_radio_button"
+                        android:paddingLeft="@dimen/control_space_margin_small"
+                        android:textColor="@color/wx_title_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40sdp" />
+                </RadioGroup>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="SELECT MODE"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_marginLeft="@dimen/control_space_margin_medium"
+                        android:text="Pickup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/wx_title_color"
+                        android:button="@drawable/custom_radio_button"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/control_space_margin_small"
+                        android:textSize="@dimen/small_font_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40sdp" />
+
+                    <RadioButton
+                        android:layout_marginLeft="@dimen/control_space_margin_medium"
+                        android:text="Dropoff"
+                        android:textSize="@dimen/small_font_height"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/wx_title_color"
+                        android:background="@null"
+                        android:button="@drawable/custom_radio_button"
+                        android:paddingLeft="@dimen/control_space_margin_small"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40sdp" />
+                </RadioGroup>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="ENTER DETAILS"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_marginLeft="@dimen/control_space_margin_medium"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_marginBottom="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/date_styleTXT"
+                        style="@style/RegularEdit"
+                        android:drawableLeft="@drawable/calculator"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:textColorHint="@color/wx_title_color"
+                        android:paddingRight="@dimen/control_space_margin_large"
+                        android:hint="dd/mm/yyyy"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/hour_styleTXT"
+                        style="@style/RegularEdit"
+                        android:drawableLeft="@drawable/clock"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:textColorHint="@color/wx_title_color"
+                        android:paddingRight="@dimen/control_space_margin_large"
+                        android:focusable="false"
+                        android:hint="hh:mm"
+                        android:layout_marginBottom="@dimen/control_space_margin_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <Button
+                            android:layout_gravity="top"
+                            android:id="@+id/doneBTN"
+                            style="@style/DefaultButtonRed"
+                            android:textColor="@drawable/accent_button_textcolor_red"
+                            android:text=" DONE"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_30sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

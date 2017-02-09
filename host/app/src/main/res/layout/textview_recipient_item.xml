@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edtTxt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Surash Yadav"
+    android:drawableLeft="@drawable/person1"
+    android:drawablePadding="@dimen/_6sdp"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    android:textColor="@color/wx_title_color"
+    android:textSize="@dimen/_35sdp"/>
+    <!--android:textColor="@color/wx_primary_color" />-->
+    <!--android:background="@drawable/token_item_selector"-->

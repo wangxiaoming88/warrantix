@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videocon_layout"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:id="@+id/textNumberView"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:visibility="visible"
+            android:text="01"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/tiny_font_height"
+            android:background="@drawable/circle_tag_color"/>
+        <TextView
+            android:id="@+id/defaultTextView"
+            android:visibility="visible"
+            android:text="DEFAULT"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/tiny_font_height"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_width="match_parent" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="@dimen/control_space_margin_medium"
+        android:layout_marginBottom="@dimen/control_space_margin_large"
+        android:id="@+id/pluginImageView"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_centerInParent="true"
+        android:src="@drawable/warrantix0"/>
+
+</RelativeLayout>

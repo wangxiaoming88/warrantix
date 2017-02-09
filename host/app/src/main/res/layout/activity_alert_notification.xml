@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="@string/alert"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:orientation="vertical"
+        android:background="@color/wx_primary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_medium"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Receive Email Notification"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptEmailNotification"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Receive Mobile SMS"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptMobileSMS"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="New Product Videos"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptProductVideo"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Survey &amp; Polls"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptSurvey"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Product Recalls"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptProductRecalls"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Receive Calls"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptReceiveCalls"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Post Service Feedback"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptPostServiceFeedback"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:text="Referral Program"
+                android:textSize="@dimen/small_font_height"
+                android:textColor="@color/wx_tag_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/acceptReferralProgram"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                app:kswBackDrawable="@drawable/miui_back_drawable"
+                app:kswBackMeasureRatio="2"
+                app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@color/wx_hint_color"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"/>
+    </LinearLayout>
+
+</RelativeLayout>

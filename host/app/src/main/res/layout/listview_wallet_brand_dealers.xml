@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_110sdp">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/products_image"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/dealer_star"
+                android:visibility="visible"
+
+                android:layout_width="@dimen/_20sdp"
+                android:background="@drawable/dealer_star"
+                android:layout_height="@dimen/_20sdp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_13sdp"
+                android:layout_weight="0.7"
+                android:textColor="@color/wx_enthusiastic_color"
+                android:layout_height="0dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/branddealers_star1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/red_star"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp" />
+                    <ImageButton
+                        android:id="@+id/branddealers_star2"
+                        android:background="@drawable/red_star"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_10sdp" />
+                    <ImageButton
+                        android:id="@+id/branddealers_star3"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/red_star"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_10sdp" />
+                    <ImageButton
+                        android:id="@+id/branddealers_star4"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/red_star"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_10sdp" />
+                    <ImageButton
+                        android:id="@+id/branddealers_star5"
+                        android:background="@drawable/grey_star"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_10sdp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/branddealers_distance"
+                            android:background="@drawable/distance_bg"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_18sdp" />
+                        <TextView
+                            android:id="@+id/distance"
+                            android:text="16km"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_9sdp"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/place1"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_9sdp"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.2"
+                android:layout_height="0dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1.43"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+                <ImageButton
+                    android:id="@+id/branddealers_phone"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/call_button_selector"
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_height="@dimen/_29sdp" />
+
+
+
+                <ImageButton
+                    android:id="@+id/branddealers_googlemap"
+                    android:background="@drawable/location_button_selector"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_height="@dimen/_29sdp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.27"
+                android:layout_height="0dp">
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

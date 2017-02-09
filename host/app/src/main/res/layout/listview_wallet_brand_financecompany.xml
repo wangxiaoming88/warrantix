@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wx_secondary_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:background="@color/wx_primary_color"
+        android:layout_height="@dimen/_90sdp">
+
+        <ImageView
+            android:id="@+id/products_image"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <Button
+                    android:id="@+id/financePolicyButton"
+                    android:textAllCaps="false"
+                    style="@style/DefaultButtonRed"
+                    android:layout_marginRight="@dimen/control_space_margin_small"
+                    android:textColor="@drawable/accent_button_textcolor_red"
+                    android:text="Apply"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_36sdp" />
+
+                <ImageButton
+                    android:id="@+id/brand_insurance_call"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/call_button_selector"
+                    android:layout_marginLeft="@dimen/control_space_margin_small"
+                    android:layout_width="@dimen/_33sdp"
+                    android:layout_height="@dimen/_33sdp" />
+
+                <ImageButton
+                    android:id="@+id/brand_insurance_chat"
+                    android:background="@drawable/chaticon_button_selector"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_33sdp"
+                    android:layout_marginLeft="@dimen/control_space_margin_small"
+                    android:layout_height="@dimen/_33sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

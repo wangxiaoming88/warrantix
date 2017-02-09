@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_warrantix_usedproduct"
+        android:title="Used products" />
+
+    <item
+        android:id="@+id/menu_warrantix_accessories"
+        android:title="Accessories" />
+    <item
+        android:id="@+id/menu_warrantix_spareparts"
+        android:title="Spare Parts" />
+</menu>

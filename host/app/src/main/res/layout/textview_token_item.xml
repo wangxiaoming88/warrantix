@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edtTxt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="adf asd asd ad ad f"
+    android:drawablePadding="@dimen/_3sdp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingTop="@dimen/_1sdp"
+    android:paddingBottom="@dimen/_1sdp"
+    android:textColor="@color/wx_title_color"
+    android:textSize="@dimen/tiny_font_height" />
+    <!--android:background="@drawable/token_item_selector"-->
+    <!--android:textColor="@color/wx_primary_color" />-->

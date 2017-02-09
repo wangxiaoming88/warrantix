@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp">
+
+    <RelativeLayout
+        android:background="@color/wx_primary_color"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/categoryImageView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginTop="@dimen/control_space_margin_small"
+            android:layout_marginBottom="@dimen/control_space_margin_small"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp" />
+
+        <TextView
+            android:id="@+id/categoryNameView"
+            android:layout_toRightOf="@id/categoryImageView"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_11sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/wx_tag_color"
+            android:singleLine="true"
+            android:minHeight="@dimen/_30sdp" />
+        <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/wx_third_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

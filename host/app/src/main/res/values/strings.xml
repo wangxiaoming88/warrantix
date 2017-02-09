@@ -1,0 +1,381 @@
+<resources>
+    <string name="app_name">Warrantix</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_invoice_setting"><u>Click to Add Invoice Attachment</u></string>
+
+    <string name="search">search</string>
+    <string name="euro_currency">\u20ac</string>
+    <string name="pound_currency">\u00a3</string>
+
+    <!--Brand_list    -->
+    <string name="shoppingcart">Shopping Cart</string>
+    <string name="yourorders">Your Orders</string>
+    <string name="manuals">Manuals</string>
+    <string name="recallremainders">Recalls &amp; remainders</string>
+    <string name="localdeals">Local Deals</string>
+    <string name="syncvault">Sync Vault</string>
+    <string name="transferwarranty">Transfer Warranty</string>
+    <string name="useraccount">User Account</string>
+    <string name="settings">Settings</string>
+
+    <!--Brand_list_useraccount    -->
+    <string name="useraccount_big">USER ACCOUNT</string>
+    <string name="walletid">Wallet ID</string>
+    <string name="walletidTXT">Lorem lpsum is simply dummy</string>
+    <string name="customerid">Customer ID</string>
+    <string name="customeridTXT">Lorem lpsum is simply dummy</string>
+    <string name="name">NAME</string>
+    <string name="nameTXT">Enter Your Name</string>
+    <string name="address">ADDRESS</string>
+    <string name="addressTXT">Enter Your Address</string>
+    <string name="city">CITY</string>
+    <string name="cityTXT">Enter Your City</string>
+    <string name="mobileno">MOBILE NO.</string>
+    <string name="mobilenoTXT">Enter Your Mobile No.</string>
+    <string name="emailaddress">EMAIL ADDRESS</string>
+    <string name="emailaddressTXT">Enter Your Email Address</string>
+    <string name="password">PASSWORD</string>
+    <string name="passwordTXT">Enter Your Password</string>
+    <string name="debitcard">DEBIT CARD</string>
+    <string name="debitcardTXT">Enter Your Debit Card</string>
+
+    <!--Brand_list_settings    -->
+    <string name="setting_big">SETTINGS</string>
+    <string name="keepaliveduration">KEEP ALIVE DURATION</string>
+    <string name="hours">Hours</string>
+    <string name="keepaliveduration_explain">Defines how often App pings the Server</string>
+    <string name="adddevice">ADD DEVICE TO CUSTOMER ID</string>
+    <string name="adddevice_explain">Add Devices to a Family Members</string>
+    <string name="addcustomerid">ADD CUSTOMER ID TO WALLET ID </string>
+    <string name="addcustomerid_explain">Add Family Members to the Wallet</string>
+    <string name="alertandnoti">ALERTS &amp; NOTIFICATIONS</string>
+    <string name="defaultmarketplace">DEFAULT MARKETPLACE</string>
+    <string name="about_big">ABOUT</string>
+    <!--Brand_list_settings_walletid    -->
+    <string name="WALLET_ID">WALLET ID</string>
+    <string name="FAMILY_MEMBER">FAMILY MEMBER :</string>
+    <string name="CUSTOMER_ID">CUSTOMER ID :</string>
+    <string name="Mobile_Phone1">Mobile Phone1</string>
+    <string name="Mobile_Phone2">Mobile Phone2</string>
+    <string name="Tablet">Tablet</string>
+    <string name="ADD_CUSTOMER_ID">ADD CUSTOMER ID</string>
+    <string name="XXXX"> XXXX-XXXX-XXXX-XXXX</string>
+    <string name="phoneNumber">888-888-8888</string>
+    <string name="XXXX1"> XXXX-XXXX-XXXX-XXXX</string>
+    <string name="Lorem_ipsum"> dummy text</string>
+    <!--Brand_list_settings_defaultmarketplace    -->
+    <string name="DEFAULT_MARKETPLACE">MARKETPLACE BAR SETTINGS</string>
+    <!--Brand_list_settings_about    -->
+    <string name="ABOUT">ABOUT</string>
+    <string name="WELCOME">WELCOME</string>
+    <string name="SKIP">SKIP</string>
+    <string name="WELCOME_TEXT">Warrantix help you while you buy, after you buy, when you resell, while you replace</string>
+    <!--Brand_list_settings_shopping cart    -->
+    <string name="SHOPPING_CART">SHOPPING CART</string>
+    <string name="Zero_Motorcycles">Hero Motorcycles - </string>
+    <string name="Your_order">Your order is eligible for free delivery</string>
+    <string name="important_message">Important message for items in your cart</string>
+    <string name="Look_up">Look up for product Financing:</string>
+    <string name="Details">Details</string>
+
+
+    <!--Brand_list_transfer warranty 1   -->
+    <string name="transferwarranty_big">TRANSFER WARRANTY</string>
+    <string name="brand">BRAND</string>
+    <string name="brandTXT">Enter Brand name</string>
+    <string name="productname">PRODUCT NAME</string>
+    <string name="productnameTXT">Enter Product Name</string>
+    <string name="modelno">MODEL NO.</string>
+    <string name="modelnoTXT">Enter Model No.</string>
+    <string name="purchasedate">PURCHASE DATE</string>
+    <string name="purchasedateTXT">  dd / mm / yy</string>
+    <string name="warrantyvalidity">WARRANTY VALIDITY</string>
+    <string name="warrantyvalidityTXT">Enter Warranty Validity</string>
+
+    <!--Brand_list_transfer warranty 2   -->
+    <string name="transferee">TRANSFEREE</string>
+    <string name="transfereeTXT">Enter Name of Transferee</string>
+    <string name="walletID">WALLET ID</string>
+    <string name="walletIDTXT">Enter Wallet ID</string>
+    <string name="transferdate">TRANSFER DATE</string>
+    <string name="transferdateTXT"> dd / mm / yy</string>
+    <string name="messagetotransferee">Message to Transferee</string>
+    <string name="messagetotransfereeTXT">Type here</string>
+    <string name="warrantytransferauthorize">Warranty Transfer Authorized</string>
+    <string name="releasewarranty">Release Warranty after Payment Receipt </string>
+
+    <!--Brand_list_order   -->
+    <string name="orderlist">ORDER LIST</string>
+
+    <!--Brand_list_manual   -->
+    <string name="manual">MANUALS</string>
+
+    <!--Brand_list_recalls   -->
+    <string name="recalls">RECALLS &amp; REMINDERS</string>
+
+    <!--Brand_list_local deals  -->
+    <string name="local_deals">LOCAL DEALS</string>
+
+    <!--Brand_dealers   -->
+    <string name="showingdealers">Showing dealers near</string>
+    <string name="Ambawadi">Ambawadi</string>
+    <string name="Change">Change</string>
+    <string name="Dealers_big">DEALERS</string>
+
+    <!--Brand_service   -->
+    <string name="showingservice">Showing Service Centers near</string>
+    <string name="Service_big">SERVICE CENTERS</string>
+
+
+    <!--Brand_featured   -->
+    <string name="FEATURED">FEATURED</string>
+    <string name="Karizma">Karizma ZMR</string>
+    <string name="Exshowroomprice">(Ex showroom price)</string>
+    <string name="Reveal">Reveal</string>
+    <string name="Refer">Refer</string>
+    <string name="Review">Review</string>
+    <string name="Rank">Rank</string>
+    <string name="Chat">Chat</string>
+    <string name="featured_explain">Lorem ipsum dolor sit amet, consectur adipising elit. auris convallis ipsum sit amet porttitor blandit. Send at cursus nunc, various elementum dui. Cras vestibulum lorem ut lectus aliquet, sed maximuns eros mattis. In et diam lobortis , fringilla dolor...</string>
+    <string name="Readmore">Read more</string>
+    <string name="SALIENT_FEATURES">SALIENT FEATURES</string>
+
+    <!--Brand_main  -->
+    <string name="HERO_BRAND_APP">HERO BRAND APP</string>
+    <string name="MyProducts">My Products</string>
+    <string name="Dealers">Dealers</string>
+    <string name="Featured">Featured</string>
+    <string name="Accessories">Accessories</string>
+    <string name="Service">Service</string>
+    <string name="Social">Social</string>
+    <string name="Insurance">Insurance</string>
+    <string name="Finance">Finance</string>
+    <string name="AMC">AMC</string>
+
+    <!--Brand_product_detail  -->
+    <string name="PURCHASE_IMFORMATION">PURCHASE INFORMATION</string>
+    <string name="Purchase_Date">Purchase Date</string>
+    <string name="Expiry_Date">Expiry Date</string>
+    <string name="EMI_Due">EMI Due</string>
+    <string name="View_Invoice"><u>View Invoice</u></string>
+    <string name="WARRANTY">WARRANTY</string>
+    <string name="days_remind"> days remained in your warranty</string>
+    <string name="Extend">Extend</string>
+    <string name="Entitlements">Entitlements</string>
+    <string name="PROTECTION_INSURANCE">PROTECTION INSURANCE</string>
+    <string name="Insurance_Till">Insurance Till</string>
+    <string name="Provider">Provider</string>
+    <string name="Payment">Payment</string>
+    <string name="Record">Record</string>
+    <string name="Rebate">Rebate</string>
+    <string name="Rebate_claim">CLAIM REBATE</string>
+    <string name="Return">Return</string>
+    <string name="Recycle_Product">RECYCLE PRODUCT</string>
+    <string name="Recycle_Explain">If Products age is more than 3 years, the system will automatically select recycle. If refurbish is choosen the proceeds will go the aid of Cancer Pacients</string>
+    <string name="Resell">Resell</string>
+    <string name="Recycle">Recycle</string>
+    <string name="Refurbish">Refurbish</string>
+    <string name="Pickup">Pickup</string>
+    <string name="Pickup_date_time">Pick up Date and Time</string>
+
+    <!--Brand_product_detail  -->
+    <string name="SERVICE_CONTANCTS">SERVICE CONTACTS</string>
+
+
+    <!--Brand_product_detail_service  -->
+    <string name="First_Free_Service">First Free Service</string>
+    <string name="date_style">dd/mm/yy</string>
+    <string name="hour_style">hh:mm</string>
+    <string name="FIXES_NEEDED">FIXES NEEDED</string>
+    <string name="Fixes_1">Fixes 1</string>
+    <string name="Fixes_2">Fixes 2</string>
+    <string name="Fixes_3">Fixes 3</string>
+    <string name="Special_Request">Special Request</string>
+
+    <!--Brand_product_service  -->
+    <string name="typeofservice">TYPE OF SERVICE</string>
+    <string name="parts_replaced">Parts Replaced</string>
+    <string name="product_candition_rating">Product Condition Rating:</string>
+    <string name="charges_RS">Charges : Rs.</string>
+    <string name="invoice"><u>Invoice</u></string>
+    <string name="SCHEDULE_SERVICE">SCHEDULE SERVICE</string>
+    <string name="SERVICE_HISTORY">SERVICE HISTORY</string>
+
+    <!--Brand_product_rebate  -->
+    <string name="Note">NOTE</string>
+    <string name="mall_in_rebate">MALL IN REBATE</string>
+    <string name="Deposite_amount_into_my_Cash_Wallet">Deposite amount into my Cash Wallet</string>
+    <string name="Mall_in_the_Cheque">Mall in the Cheque</string>
+    <string name="Transfer_into_my_Paypal_Account">Transfer into my Paypal Account</string>
+
+    <!--Brand_product_return  -->
+    <string name="RETURN_PRODUCT">RETURN PRODUCT</string>
+    <string name="RETURNING">RETURNING</string>
+    <string name="Returnable_until">Returnable until</string>
+
+
+    <!--Brand_social  -->
+    <string name="SOCIAL">SOCIAL</string>
+
+    <!--Brand_insurancel  -->
+    <string name="SELECT_INSURANCE_POLICY">SELECT INSURANCE POLICY</string>
+    <!--Brand_insurance2  -->
+    <string name="AMOUNT">AMOUNT</string>
+    <string name="SELECT_PAYMENT_MODE">SELECT PAYMENT MODE</string>
+    <string name="Credit_Card">Credit Card</string>
+    <string name="Debit_Card">Debit Card</string>
+    <string name="NetBanking">NetBanking</string>
+    <string name="American_Express_Card">American Express Card</string>
+    <string name="Mobiquik_Wallet">Mobiquik Wallet</string>
+    <string name="payTM_Wallet">payTM Wallet</string>
+    <string name="ENTER_CARD_DETAILS">ENTER CARD DETAILS</string>
+    <!--Brand_insurance3  -->
+    <string name="CONFIRM_AND_PAY">CONFIRM AND PAY</string>
+    <string name="I_accept_the_terms_and_conditions">I accept the <u>terms and conditions</u></string>
+
+    <!--Brand_social -->
+    <string name="rank_explain">Ratings of Hero Products by your connections</string>
+    <string name="refer_explain">People you have referred Hero products to</string>
+    <string name="reveal_explain">Your connections who own Hero Products</string>
+    <string name="review_explain">Reviews of Hero Products made by your connections</string>
+
+    <!--Brand_finance -->
+    <string name="PRODUCT_FINANCE">PRODUCT FINANCE</string>
+    <string name="Receive_proposal">Receive Proposals from leading Finance Companies with 24 hours</string>
+    <string name="Select_Brand">Select Brand</string>
+    <string name="lorem_lpsum">Lorem lpsum is simply dummy text</string>
+    <string name="lorem_lpsum1">Lorem lpsum is simply text</string>
+    <string name="CONFIGURATION">CONFIGURATION</string>
+    <string name="Select_Configuration">Select Configuration</string>
+    <string name="LOCATION_CITY">LOCATION/CITY</string>
+    <string name="Select_location_city">Select Your Location/City</string>
+    <string name="open_this">Open this, if Other is Chosen</string>
+
+    <string name="EMPLOYER">EMPLOYER</string>
+    <string name="Select_Employer">Select Employer</string>
+    <string name="Salaried">Salaried</string>
+    <string name="Self_Employed">Self Employed</string>
+    <string name="CROSS_MONTHLY_SALARY">CROSS MONTHLY SALARY</string>
+    <string name="Enter_Monthly_Salary">Enter Monthly Salary(INR)</string>
+    <string name="SALARY_DEPOSITED">SALARY DEPOSITED TO WHICH BANK?</string>
+    <string name="Select_Bank">Select Bank</string>
+    <string name="JOINING_DATE">JOINING DATE</string>
+    <string name="Enter_Joining_Date">Enter Joining Date</string>
+    <string name="WORK_EXPERIENCE">WORK EXPERIENCE</string>
+    <string name="Enter_Experience">Enter Experience in Years</string>
+    <string name="YEARS_IN_CURRENT_CITY">YEARS IN CURRENT CITY</string>
+    <string name="Enter_Duration">Enter Duration in Years</string>
+    <string name="YEARS_IN_CURRENT_HOME">YEARS IN CURRENT HOME</string>
+
+    <string name="RESIDENCE_TYPE">RESIDENCE TYPE</string>
+    <string name="Select_Residence_Type">Select Residence Type</string>
+    <string name="DATE_OF_BIRTH">DATE OF BIRTH</string>
+    <string name="Enter_Date_of_Birth">Enter Date of Birth</string>
+    <string name="TOTAL_EMIS">TOTAL EMIS</string>
+    <string name="Enter_Total_EMIs">Enter Total EMIs</string>
+    <string name="AVERAGE_MONTHLY_INCENTIVES">AVERAGE MONTHLY INCENTIVES</string>
+    <string name="Average_Monthly_Incentives">Average Monthly Incentives</string>
+    <string name="Is_your_Spouse_Working">Is your Spouse Working?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="CROSS_MONTHLY_SALARY_OF_SPOUSE">CROSS MONTHLY SALARY OF SPOUSE</string>
+    <string name="Cross_Monthly_Salary_of_Spouse">Cross Monthly Salary of Spouse</string>
+    <string name="Want_to_receive_Finance">Want to receive Finance Proposals by email</string>
+    <string name="Want_Finance_Company">Want Finance Company to Call me</string>
+    <string name="Brand_Sales_Office">Brand Sales Office can call me</string>
+    <string name="Morning">Morning</string>
+    <string name="Afternoon">Afternoon</string>
+    <string name="Evening">Evening</string>
+
+
+    <!--marketplace -->
+    <string name="POPULAR_CATEGORIES">POPULAR CATEGORIES</string>
+    <string name="OFFERS">OFFERS</string>
+    <string name="BEST_SELLING_PRODUCTS">BEST SELLING PRODUCTS</string>
+    <string name="TOP_RATED_PRODUCTS">TOP RATED PRODUCTS</string>
+
+    <!--Wallet_brand -->
+    <string name="LEAD_BRAND">LEAD BRAND</string>
+    <string name="ASSOCIATE_BRANDS">ASSOCIATE BRANDS</string>
+
+    <!--Wallet_main -->
+    <string name="BRANDS">BRANDS</string>
+    <string name="RETAILERS">RETAILERS</string>
+    <string name="PRODUCTS">PRODUCTS</string>
+
+    <!--Wallet_retailers -->
+    <string name="LEAD_RETAILER">LEAD RETAILER</string>
+    <string name="ASSOCIATE_RETAILERS">ASSOCIATE RETAILERS</string>
+
+    <!--Wallet_brand_social_activity -->
+    <string name="Reveal_big">REVEAL</string>
+    <string name="Reveal_big_explain">Reveal your product to your connections</string>
+    <string name="select_product">Select Product</string>
+    <string name="add_recipicients">Add Recipients Here</string>
+    <string name="add_more_recipicients">Add More Recipients</string>
+
+    <string name="Refer_big">REFER</string>
+    <string name="Refer_big_explain">Refer your product to your connections</string>
+    <string name="Refer_via">Refer via</string>
+    <string name="message">Message</string>
+    <string name="Review_big">REVIEW</string>
+    <string name="Review_big_explain">Review your product</string>
+    <string name="Rank_big">RANK</string>
+    <string name="Rate_big_explain">Rate your product</string>
+    <string name="Rating">Rating</string>
+    <string name="Chat_big">CHAT</string>
+
+    <!--Registration_scanmode -->
+    <string name="REGISTERING_PRODUCT">REGISTERING PRODUCT</string>
+    <string name="SCAN_QR_BARCODE">SCAN QR/BARCODE</string>
+    <string name="ADD_PROFF_OF_PURCHASE">ADD PROFF OF PURCHASE</string>
+    <string name="PRODUCT_DETAIL">PRODUCT DETAIL</string>
+    <string name="PRODUCT_NAME">PRODUCT NAME</string>
+    <string name="BRAND">BRAND</string>
+    <string name="Ex_Motorcycle">(Ex.Motorcycle)</string>
+    <string name="Ex_Hero">(Ex.Hero)</string>
+    <string name="MODEL_NUMBER">MODEL NUMBER</string>
+    <string name="Enter_Model_Number_here">Enter Model Number here</string>
+    <string name="Optional">Optional</string>
+    <string name="Recommended_For_Digital_Warranty_Precision">Recommended For Digital Warranty Precision</string>
+    <string name="Serial_Number">Serial Number</string>
+    <string name="Enter_Serial_here">Enter Serial Number here</string>
+
+    <string name="menu_recall">Recalls &amp; Reminders</string>
+    <string name="alert">ALERTS &amp; NOTIFICATION SETTINGS</string>
+    <string name="eSHOP_ACCESSORIES">eSHOP ACCESSORIES</string>
+    <string name="Flip_Cover">Flip Cover - Galaxy S6 Edge</string>
+    <string name="Color">Color</string>
+    <string name="White">White</string>
+    <string name="Proce">Price: 2,000,00</string>
+    <string name="Delivery">+ Delivery Charges may apply</string>
+    <string name="Finance_Option">Finance Option Available</string>
+    <string name="Apply_for_Finance">Apply for Finance</string>
+    <string name="ENTER_PINCODE">ENTER PINCODE</string>
+    <string name="Enter_Pincode">Enter Pincode</string>
+    <string name="Delivary_to_pincode">Delivery to pincode xxx xxx with in 6~9 days Business Days</string>
+    <string name="Quantity">Quantity</string>
+    <string name="ABOUT_THIS_ITEM">ABOUT THIS ITEM</string>
+    <string name="Description">Description</string>
+    <string name="Features_Details">Features &amp; Details</string>
+    <string name="Features_Details_Explain">Lorem ipsum dolor sit amet, consectur adipising elit. Cras a aliqut lorem, vitae laoreet odio. Nullam eu neque et numc cursus commodo. Vivamus at magna eleifend, luctus augue at, ullamcorper augue.</string>
+
+    <string name="TATA_AIG">TATA AIG</string>
+    <string name="name_explain1">If its important, its worth protecting</string>
+    <string name="tata_explain1">Starting at Rs. 3,500, a Product Care Plan covers unexpected repairs with a Rs. 0.00 deductable</string>
+    <string name="Insurance_Type">Insurance Type</string>
+    <string name="Vendor">Vendor</string>
+    <string name="Deal">Deal</string>
+    <string name="Duration">Duration</string>
+    <string name="PREMIUM">PREMIUM</string>
+    <string name="RS_VALUE">Rs. 5,000.00</string>
+    <!--<string name="Purchase_Protection1">Purchase Protection \u002D this coverage foes beyond the limitation of manufacturer's warranty defects and protects purchases from loss due to the end accidental damage</string>-->
+    <string name="view_manual"><u>View Manual</u></string>
+
+    <string name="AMCDescription1">One full year coverage - service - for your covered home electronic / applicance.\n\n1 preventive maintenance visit durating the year\n\nUnlimited breakdown coverage - at home or on phone</string>
+
+    <string name="gcm_defaultSenderId">483587549614</string>
+
+</resources>

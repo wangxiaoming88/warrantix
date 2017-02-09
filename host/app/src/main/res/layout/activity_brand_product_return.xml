@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:background="@color/wx_secondary_color"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/product_return_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:text="@string/RETURN_PRODUCT"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.warrantix.main.customview.VerticalScrollView
+        android:layout_marginBottom="@dimen/control_space_margin_medium"
+        android:layout_below="@id/product_return_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/control_space_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewInProofPurchase">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/returningTXT"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="@string/RETURNING"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/wx_enthusiastic_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/product_name"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:text="Karizme ZMR"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_height="@dimen/_30sdp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="@dimen/_30sdp">
+                            <LinearLayout
+                                android:gravity="left"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:id="@+id/retunableuntilTXT"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/Returnable_until"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/wx_tag_color"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:id="@+id/days"
+                                    android:layout_width="wrap_content"
+                                    android:text="25 / 01 / 2015"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/wx_tag_color"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/control_space_margin_small">
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_below="@id/cardViewInProofPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView1InProofPurchase">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="@color/wx_primary_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:background="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_35sdp">
+                                    <com.warrantix.main.customview.TokenTextView
+                                        android:focusable="false"
+                                        android:id="@+id/selectReasonTxt"
+                                        style="@style/RegularTokenView"
+                                        android:layout_width="match_parent"
+                                        android:hint="Select Reason"
+                                        android:textColorHint="@color/wx_title_color"
+                                        android:shadowColor="@color/wx_title_color"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:layout_height="match_parent" />
+                                    <ImageButton
+                                        android:id="@+id/dropButton1"
+                                        android:layout_marginRight="@dimen/_15sdp"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@drawable/check"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_alignRight="@+id/selectReasonTxt"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp" />
+                                </RelativeLayout>
+                                <ListView
+                                    android:visibility="gone"
+                                    android:id="@+id/reasonListView"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_90sdp"/>
+                                <EditText
+                                    android:id="@+id/messageTXT"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:layout_marginLeft="@dimen/_25sdp"
+                                    android:layout_marginRight="@dimen/_25sdp"
+                                    android:layout_width="match_parent"
+                                    android:hint="Comments"
+                                    android:textColorHint="@color/wx_title_color"
+                                    android:shadowColor="@color/wx_title_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:lines="5"
+                                    android:scrollbars="vertical"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:gravity="top"
+                                    android:background="@null"
+                                    android:textColor="@color/wx_tag_color"
+                                    android:layout_height="@dimen/_90sdp" />
+                                <View
+                                    android:layout_marginLeft="@dimen/control_space_margin_medium"
+                                    android:layout_marginRight="@dimen/control_space_margin_medium"
+                                    android:background="@color/wx_hint_color"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_1sdp"/>
+                            </LinearLayout>
+
+
+                            <RadioButton
+                                android:id="@+id/refundImageView"
+                                android:button="@drawable/custom_radio_button"
+                                android:background="@null"
+                                android:paddingLeft="@dimen/control_space_margin_small"
+                                android:textSize="@dimen/small_font_height"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/control_space_margin_small"
+                                android:text="Refund"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_30sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Will process your refund to Master Card ending XXXX"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/replaceImageView"
+                                android:button="@drawable/custom_radio_button"
+                                android:background="@null"
+                                android:paddingLeft="@dimen/control_space_margin_small"
+                                android:textSize="@dimen/small_font_height"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/control_space_margin_small"
+                                android:text="Replace"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_30sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Will dispatch the replacement by overright Service"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="How you would like to send back?"
+                                android:textAllCaps="true"
+                                android:layout_marginTop="@dimen/control_space_margin_large"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/dropOffImageView"
+                                android:button="@drawable/custom_radio_button"
+                                android:background="@null"
+                                android:paddingLeft="@dimen/control_space_margin_small"
+                                android:textSize="@dimen/small_font_height"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/control_space_margin_small"
+                                android:text="Replace"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_30sdp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_height="@dimen/_35sdp">
+                                <com.warrantix.main.customview.TokenTextView
+                                    android:focusable="false"
+                                    android:id="@+id/dropOffText"
+                                    style="@style/RegularTokenView"
+                                    android:layout_width="match_parent"
+                                    android:hint="Drop off Location"
+                                    android:textColorHint="@color/wx_title_color"
+                                    android:shadowColor="@color/wx_title_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/wx_tag_color"
+                                    android:layout_height="match_parent" />
+                                <ImageButton
+                                    android:id="@+id/dropButton2"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/check"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_alignRight="@+id/dropOffText"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp" />
+                            </RelativeLayout>
+
+                            <ListView
+                                android:visibility="gone"
+                                android:id="@+id/dropOffListView"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_90sdp"/>
+
+                            <RadioButton
+                                android:id="@+id/pickupImageView"
+                                android:button="@drawable/custom_radio_button"
+                                android:background="@null"
+                                android:paddingLeft="@dimen/control_space_margin_small"
+                                android:textSize="@dimen/small_font_height"
+                                android:textColor="@color/wx_tag_color"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginRight="@dimen/_16sdp"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/control_space_margin_small"
+                                android:text="Pickup"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_30sdp" />
+
+                            <EditText
+                                android:id="@+id/date_styleTXT"
+                                style="@style/RegularEdit"
+                                android:drawableLeft="@drawable/calculator"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:textColorHint="@color/wx_title_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:hint="dd/mm/yyyy"
+                                android:focusable="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:id="@+id/hour_styleTXT"
+                                style="@style/RegularEdit"
+                                android:drawableLeft="@drawable/clock"
+                                android:layout_marginTop="@dimen/control_space_margin_medium"
+                                android:textColorHint="@color/wx_title_color"
+                                android:paddingRight="@dimen/control_space_margin_large"
+                                android:focusable="false"
+                                android:hint="hh:mm"
+                                android:layout_marginBottom="@dimen/control_space_margin_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:gravity="center_horizontal"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <Button
+                                    android:layout_gravity="top"
+                                    android:id="@+id/doneBTN"
+                                    style="@style/DefaultButtonRed"
+                                    android:textColor="@drawable/accent_button_textcolor_red"
+                                    android:text=" DONE"
+                                    android:layout_width="@dimen/_150sdp"
+                                    android:layout_height="@dimen/_30sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RadioGroup>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </com.warrantix.main.customview.VerticalScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

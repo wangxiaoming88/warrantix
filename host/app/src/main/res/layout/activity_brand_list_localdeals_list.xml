@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wx_secondary_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:background="@color/wx_primary_color"
+        android:layout_height="@dimen/_200sdp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/karizma_deal"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/products_image"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_100sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/name"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/wx_accent_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.4"
+                android:layout_height="0dp">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/name2"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:lines="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.6"
+                android:layout_height="0dp">
+
+                <ImageButton
+                    android:id="@+id/branddealers_distance"
+                    android:background="@drawable/distance_bg_wr"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/percent"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:id="@+id/price"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    fontPath="fonts/Montserrat-Bold.otf"
+                    android:layout_weight="1.2"
+                    android:layout_height="0dp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:layout_height="0dp">
+                <ImageButton
+                    android:id="@+id/brand_insurance_location"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/map_button_selector"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp" />
+
+                <ImageButton
+                    android:id="@+id/brand_insurance_call"
+                    android:background="@drawable/phone_button_selector"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_height="@dimen/_30sdp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+            <ImageButton
+                android:id="@+id/brand_arrow"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="HERO MOTORCYCLES"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:orientation="vertical"
+        android:background="@color/wx_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:divider="@color/wx_secondary_color"
+            android:dividerHeight="@dimen/control_space_margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/maskView"
+        android:layout_width="match_parent"
+        android:background="@color/wx_tag_color"
+        android:clickable="true"
+        android:visibility="gone"
+        android:alpha="0.3"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/product_service1_layout"
+        android:background="@drawable/stroke_linearlayout_selector"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <LinearLayout
+            android:id="@+id/revealBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/default_layout_selector"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/revealTXT"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Reveal"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/reveal"
+                    android:layout_height="@dimen/_13sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+
+        <LinearLayout
+            android:id="@+id/referBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/default_layout_selector"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/referTXT"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Refer"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/refer"
+                    android:layout_height="@dimen/_16sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+
+
+        <LinearLayout
+            android:id="@+id/reviewBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/default_layout_selector"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/reviewTXT"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Review"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/review"
+                    android:layout_height="@dimen/_18sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+
+        <LinearLayout
+            android:id="@+id/rankBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/default_layout_selector"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/rankTXT"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Rank"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/rank"
+                    android:layout_height="@dimen/_17sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/chatBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/default_layout_selector"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/chatTXT"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Chat"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/chat_deal"
+                    android:layout_height="@dimen/_16sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <com.warrantix.main.customview.PinterestView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/social2Bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        custom:childSize="44px"
+        android:visibility="gone"/>
+
+</RelativeLayout>

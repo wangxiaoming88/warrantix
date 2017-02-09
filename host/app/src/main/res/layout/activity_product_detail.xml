@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/registration_navigation_bar" android:id="@+id/registration_navigation_bar" />
+    <ScrollView
+        android:layout_below="@id/registration_navigation_bar"
+        android:background="@color/wx_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/control_space_margin_small"
+            android:layout_marginRight="@dimen/control_space_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewInProductDetail">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/headerInProductDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/progressImageViewInProductDetail"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/control_space_margin_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:id="@+id/circle1"
+                                android:background="@drawable/transfer_circle_color"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <ImageButton
+                                android:id="@+id/bar1"
+                                android:background="@drawable/transfer_retangle_color"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_3sdp" />
+
+                            <ImageButton
+                                android:id="@+id/circle2"
+                                android:background="@drawable/transfer_circle_color"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp" />
+                            <ImageButton
+                                android:id="@+id/bar2"
+                                android:background="@drawable/transfer_retangle"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_3sdp" />
+                            <ImageButton
+                                android:id="@+id/circle3"
+                                android:background="@drawable/transfer_circle_white"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp" />
+                            <ImageButton
+                                android:id="@+id/bar3"
+                                android:background="@drawable/transfer_retangle"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_3sdp" />
+                            <ImageButton
+                                android:id="@+id/circle4"
+                                android:background="@drawable/transfer_circle_white"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp" />
+                        </LinearLayout>
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/control_space_margin_medium"
+                            android:src="@drawable/registration_stepper_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/titleViewInProductDetail"
+                            style="@style/TitleViewStyle"
+                            android:layout_marginTop="@dimen/control_space_margin_small"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/progressImageViewInProductDetail"
+                            android:text="PRODUCT DETAIL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_below="@id/titleViewInProductDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/control_space_margin_medium"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewInProductDetail"
+                android:id="@+id/cardView1InProductDetail">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lblProductNameInProductDetail"
+                        style="@style/Heading3"
+                        android:textColor="@color/wx_title_color"
+                        android:text="Product Name"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txtProductNameInProductDetail"
+                        style="@style/RegularEdit"
+                        android:hint="(Ex, Motorcycle)"
+                        android:textColorHint="@color/wx_hint_color"
+                        android:paddingRight="@dimen/control_space_margin_large"
+                        android:layout_below="@id/lblProductNameInProductDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:id="@+id/btnScanProductInProductDetail"
+                        android:layout_alignTop="@id/lblProductNameInProductDetail"
+                        android:layout_alignRight="@+id/txtProductNameInProductDetail"
+                        android:clickable="true"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/registration_scan_icon"
+                            android:background="@android:color/transparent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_width="@dimen/_25sdp"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/lblBrandInProductDetail"
+                        style="@style/Heading3"
+                        android:layout_below="@+id/txtProductNameInProductDetail"
+                        android:textColor="@color/wx_title_color"
+                        android:text="Brand"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txtBrandInProductDetail"
+                        style="@style/RegularEdit"
+                        android:hint="(Ex, Hero)"
+                        android:textColorHint="@color/wx_hint_color"
+                        android:layout_below="@id/lblBrandInProductDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/lblModelNumberInProductDetail"
+                        style="@style/Heading3"
+                        android:layout_below="@+id/txtBrandInProductDetail"
+                        android:textColor="@color/wx_title_color"
+                        android:text="Model Number"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txtModelNumberInProductDetail"
+                        style="@style/RegularEdit"
+                        android:hint="Enter Model Number here"
+                        android:textColorHint="@color/wx_hint_color"
+                        android:layout_below="@id/lblModelNumberInProductDetail"
+                        android:layout_marginBottom="@dimen/control_space_margin_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginBottom="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView1InProductDetail"
+                android:id="@+id/cardView2InProductDetail">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lblOptionalInProductDetail"
+                        style="@style/Heading1"
+                        android:textColor="@color/wx_title_color"
+                        android:text="Optional"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_marginBottom="@dimen/control_space_margin_tiny"
+                        android:layout_marginLeft="@dimen/control_space_margin_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/lblRecommendMsgInProductDetail"
+                        android:textSize="@dimen/tiny_font_height"
+                        android:textColor="@color/wx_list_text_color"
+                        fontPath="fonts/Montserrat-Regular.ttf"
+                        android:layout_alignLeft="@+id/lblOptionalInProductDetail"
+                        android:paddingLeft="@dimen/control_space_margin_medium"
+                        android:text="Recommended For Digital Warranty Precision"
+                        android:layout_below="@id/lblOptionalInProductDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                    <TextView
+                        android:id="@+id/lblSerialNumberInProductDetail"
+                        style="@style/Heading3"
+                        android:textColor="@color/wx_title_color"
+                        android:text="Serial Number"
+                        android:layout_below="@id/lblRecommendMsgInProductDetail"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txtSerialNumberInProductDetail"
+                        style="@style/RegularEdit"
+                        android:hint="Enter Serial Number here"
+                        android:textColorHint="@color/wx_hint_color"
+                        android:layout_below="@id/lblSerialNumberInProductDetail"
+                        android:paddingRight="@dimen/control_space_margin_large"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:id="@+id/btnScanSerialInProductDetail"
+                        android:layout_alignTop="@id/lblSerialNumberInProductDetail"
+                        android:layout_alignRight="@id/txtSerialNumberInProductDetail"
+                        android:clickable="true"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/registration_scan_icon"
+                            android:background="@android:color/transparent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_width="@dimen/_25sdp"/>
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/btnNextInProductDetail"
+                        style="@style/DefaultButton"
+                        android:text="NEXT"
+                        android:layout_marginLeft="@dimen/control_space_margin_medium"
+                        android:layout_marginRight="@dimen/control_space_margin_medium"
+                        android:layout_marginTop="@dimen/control_space_margin_medium"
+                        android:textColor="@drawable/accent_button_textcolor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/txtSerialNumberInProductDetail"
+                        android:layout_width="@dimen/_150sdp" />
+                    <View
+                        android:layout_below="@+id/btnNextInProductDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/control_space_margin_medium"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_below="@+id/cardView2InProductDetail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_space_margin_medium"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

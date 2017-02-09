@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_shopping_cart"
+        android:title="Shopping Cart" />
+
+    <item
+        android:id="@+id/menu_your_orders"
+        android:title="Your Orders" />
+    <item
+        android:id="@+id/menu_manuals"
+        android:title="Manuals" />
+    <item
+        android:id="@+id/menu_recalls"
+        android:title="@string/menu_recall" />
+    <item
+        android:id="@+id/menu_deal"
+        android:title="Local Deals" />
+    <item
+        android:id="@+id/menu_sync_vault"
+        android:title="Sync Vault" />
+    <item
+        android:id="@+id/menu_warranty"
+        android:title="Transfer Warranty" />
+    <item
+        android:id="@+id/menu_user_account"
+        android:title="User Account" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Settings" />
+
+</menu>

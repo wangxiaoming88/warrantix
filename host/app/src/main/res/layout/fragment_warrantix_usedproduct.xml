@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wx_secondary_color">
+    <LinearLayout
+        android:id="@+id/categoryBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="12"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                style="@style/DefaultBackButtonStyle"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="Back"
+                android:layout_marginLeft="@dimen/control_space_margin_tiny"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/wx_tag_color"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/categoryBar"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingTop="@dimen/control_space_margin_tiny"
+                android:paddingBottom="@dimen/control_space_margin_tiny"
+                android:text="Used Products"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@color/wx_fourth_color"
+                android:textSize="@dimen/small_font_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/spaceLayout1"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_marginBottom="@dimen/control_space_margin_medium"
+                android:layout_width="match_parent"
+                android:background="@color/wx_secondary_color"
+                android:layout_height="@dimen/_25sdp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/wx_primary_color"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="@string/search"
+                    android:textSize="@dimen/_12sdp"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:textColor="@color/wx_list_text_color"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/popupMenu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/menu_scal"
+                    android:background="@color/wx_primary_color"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spaceLayout4"
+                android:layout_below="@+id/spaceLayout3"
+                android:layout_width="match_parent"
+                android:background="@color/wx_secondary_color"
+                android:layout_height="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/offersTXT"
+                    android:text="@string/OFFERS"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spaceLayout5"
+                android:layout_below="@+id/spaceLayout4">
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/xtreme_bike"
+                    android:layout_height="@dimen/_120sdp" />
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_below="@+id/spaceLayout5"
+                android:layout_width="match_parent"
+                android:background="@color/wx_secondary_color"
+                android:layout_height="@dimen/_35sdp">
+
+                <TextView
+                    android:text="PRODUCT CATEGORIES"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:id="@+id/vd_sc_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:background="@color/wx_primary_color"
+                android:layout_weight="12">
+
+                <LinearLayout
+                    android:id="@+id/products_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/wx_primary_color"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/products_appliances"
+                        android:clickable="true"
+                        android:background="@drawable/default_layout_selector"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_80sdp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/control_space_margin_tiny"
+                            android:src="@drawable/product_appliances"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+                        <TextView
+                            android:id="@+id/appliancesTextView"
+                            android:text=" APPLIANCES "
+                            android:layout_marginTop="@dimen/control_space_margin_tiny"
+                            android:layout_marginBottom="@dimen/control_space_margin_tiny"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/products_vehicles"
+                        android:clickable="true"
+                        android:background="@drawable/default_layout_selector"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_80sdp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/product_vehicles"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+                        <TextView
+                            android:id="@+id/vehiclesTextView"
+                            android:text=" VEHICLES "
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/control_space_margin_tiny"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/products_electronics"
+                        android:clickable="true"
+                        android:background="@drawable/default_layout_selector"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_80sdp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/product_electronics"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+                        <TextView
+                            android:id="@+id/electronicsTextView"
+                            android:text=" ELECTRONICS "
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/control_space_margin_tiny"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/products_assorted"
+                        android:clickable="true"
+                        android:background="@drawable/default_layout_selector"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_80sdp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/product_personal"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+                        <TextView
+                            android:id="@+id/personalTextView"
+                            android:text=" PERSONAL "
+                            android:layout_marginTop="@dimen/control_space_margin_tiny"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/wx_tag_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/spaceLayout6"
+                android:layout_below="@+id/spaceLayout5"
+                android:layout_width="match_parent"
+                android:background="@color/wx_secondary_color"
+                android:layout_height="@dimen/_35sdp">
+
+                <TextView
+                    android:id="@+id/categoryTXT"
+                    android:text="ELECTRONICS"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:id="@+id/spaceLayout7"
+                android:layout_below="@+id/spaceLayout6"
+                android:layout_width="wrap_content"
+                android:background="@android:color/white"
+                android:layout_height="@dimen/_120sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/bestElectronics1"
+                            android:layout_width="@dimen/_130sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/marketplace_usedproduct_appliance1"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Lenovo Vibe K5"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 12,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bestElectronic2"
+                            android:layout_width="@dimen/_130sdp"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/marketplace_usedproduct_appliance2"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Moto 360"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 15,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bestElectronics3"
+                            android:layout_width="@dimen/_130sdp"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/marketplace_usedproduct_electronics1"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Karizma ZMR"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 150,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.05"
+                        android:background="@color/wx_secondary_color"
+                        android:layout_height="0dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_below="@+id/spaceLayout5"
+                android:layout_width="match_parent"
+                android:background="@color/wx_secondary_color"
+                android:layout_height="@dimen/_35sdp">
+
+                <TextView
+                    android:text="APPLIANCES"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_width="wrap_content"
+                android:background="@android:color/white"
+                android:layout_height="@dimen/_120sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/bestAppliances1"
+                            android:layout_width="@dimen/_130sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/marketplace_usedproduct_electronics1"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Karizma ZMR"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 150,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bestAppliance2"
+                            android:layout_width="@dimen/_130sdp"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/marketplace_usedproduct_appliance2"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Hunk"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 80,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bestAppliance3"
+                            android:layout_width="@dimen/_130sdp"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/karizma_deal"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Karizma ZMR"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 150,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.05"
+                        android:background="@color/wx_secondary_color"
+                        android:layout_height="0dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_below="@+id/spaceLayout5"
+                android:layout_width="match_parent"
+                android:background="@color/wx_secondary_color"
+                android:layout_height="@dimen/_35sdp">
+
+                <TextView
+                    android:text="VEHICLES"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_below="@+id/spaceLayout6"
+                android:layout_width="wrap_content"
+                android:background="@android:color/white"
+                android:layout_height="@dimen/_120sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/bestVehicle1"
+                            android:layout_width="@dimen/_130sdp"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/karizma_deal"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Karizma ZMR"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 150,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bestVehicle2"
+                            android:layout_width="@dimen/_130sdp"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/hunk_deal"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Hunk"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 80,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@color/wx_secondary_color"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bestVehicle3"
+                            android:layout_width="@dimen/_130sdp"
+                            android:clickable="true"
+                            android:background="@drawable/default_layout_selector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_75sdp"
+                                android:src="@drawable/karizma_deal"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Karizma ZMR"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/wx_tag_color"
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="0dp" />
+                                    <TextView
+                                        android:text="Rs. 150,000"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:visibility="invisible"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/buy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.05"
+                        android:background="@color/wx_secondary_color"
+                        android:layout_height="0dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

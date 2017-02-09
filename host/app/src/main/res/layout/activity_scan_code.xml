@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wx_secondary_color">
+    <include layout="@layout/registration_navigation_bar" android:id="@+id/registration_navigation_bar" />
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@id/registration_navigation_bar"
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wx_primary_color"
+        android:id="@+id/cardViewInRegistrationHelp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/progressImageViewInScanCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/circle1"
+                    android:background="@drawable/transfer_circle_color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+
+                <ImageButton
+                    android:id="@+id/bar1"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+
+                <ImageButton
+                    android:id="@+id/circle2"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <ImageButton
+                    android:id="@+id/bar2"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+                <ImageButton
+                    android:id="@+id/circle3"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <ImageButton
+                    android:id="@+id/bar3"
+                    android:background="@drawable/transfer_retangle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_3sdp" />
+                <ImageButton
+                    android:id="@+id/circle4"
+                    android:background="@drawable/transfer_circle_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+            </LinearLayout>
+            <ImageView
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/registration_stepper_one"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnInfoInScanCode"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/progressImageViewInScanCode"
+                android:src="@drawable/registration_info"
+                android:background="@null"
+                android:text="Info"
+                android:layout_marginRight="@dimen/control_space_margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/lblTitleInScanCode"
+                style="@style/TitleViewStyle"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/progressImageViewInScanCode"
+                android:text="SCAN QR/BARCODE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/containerInScanCode"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:layout_marginBottom="@dimen/control_space_margin_small"
+                android:layout_below="@id/lblTitleInScanCode"
+                android:background="@color/wx_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <me.dm7.barcodescanner.zxing.ZXingScannerView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/scannerViewInScanCode"
+                    />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnSkipInScanCode"
+                android:text="SKIP"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@drawable/white_button_textcolor"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/spaceViewInScanCode"
+                android:background="@drawable/nostroke_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+            <View
+                android:id="@+id/spaceViewInScanCode"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/control_space_margin_large"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</RelativeLayout>

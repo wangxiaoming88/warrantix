@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wx_secondary_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_180sdp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.4"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/days"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="13-Feb-2016"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/wx_list_text_color"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/times"
+                        android:layout_gravity="center_vertical"
+                        android:text="44 mins"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/wx_list_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/service_type"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/typeofservice"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/wx_enthusiastic_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/parts_replace"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:text="@string/parts_replaced"
+                    android:textSize="@dimen/_11sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/wx_tag_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/control_space_margin_large"
+                    android:text="Lorem Ipsum is simply dummy"
+                    android:textColorHint="@color/wx_hint_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:background="@color/wx_list_text_color"
+                android:layout_weight="0.02"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/product_candition"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/product_candition_rating"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/rating_mark"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="4.5"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/wx_tag_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.4"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/charge_RS"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="@string/charges_RS"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/wx_tag_color"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="2,000"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/wx_tag_color"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/invoiceBTN"
+                    android:clickable="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/invoice"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/invoice"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/wx_enthusiastic_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

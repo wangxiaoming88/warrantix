@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/registration_navigation_bar" android:id="@+id/registration_navigation_bar" />
+    <RelativeLayout
+        android:layout_below="@id/registration_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/takenPhotoViewInTapPrice"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/invoiceViewInPrice"
+            android:background="@drawable/stroke_border_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <View
+            android:id="@+id/dealViewInPrice"
+            android:background="@drawable/stroke_border_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <View
+            android:id="@+id/dragViewInPrice"
+            android:background="@drawable/stroke_border_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+    </RelativeLayout>
+</RelativeLayout>

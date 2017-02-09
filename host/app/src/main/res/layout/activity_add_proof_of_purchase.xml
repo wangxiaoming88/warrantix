@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/wx_secondary_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/registration_navigation_bar" android:id="@+id/registration_navigation_bar" />
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/control_space_margin_small"
+        android:layout_marginLeft="@dimen/control_space_margin_small"
+        android:layout_marginRight="@dimen/control_space_margin_small"
+        android:layout_marginBottom="@dimen/control_space_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registration_navigation_bar"
+        android:id="@+id/cardViewInAddProofPurchase">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/progressImageViewInAddProofPurchase"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/control_space_margin_medium"
+                android:src="@drawable/registration_stepper_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/titleViewInAddProofPurchase"
+                style="@style/TitleViewStyle"
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginBottom="@dimen/control_space_margin_small"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/progressImageViewInAddProofPurchase"
+                android:text="ADD PROOF OF PURCHASE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/spaceViewInAddProofPurchase"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/control_space_margin_large"/>
+            <eu.livotov.labs.android.camview.CameraLiveView
+                android:layout_marginTop="@dimen/control_space_margin_small"
+                android:layout_marginLeft="@dimen/control_space_margin_small"
+                android:layout_marginRight="@dimen/control_space_margin_small"
+                android:layout_marginBottom="@dimen/control_space_margin_small"
+                android:layout_below="@id/titleViewInAddProofPurchase"
+                android:id="@+id/camviewInAddProofPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btnSkipInAddProofPurchase"
+                android:text="SKIP"
+                android:textSize="@dimen/default_button_textsize"
+                android:textColor="@drawable/white_button_textcolor"
+                fontPath="fonts/Montserrat-Bold.otf"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/spaceViewInAddProofPurchase"
+                android:background="@drawable/nostroke_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
